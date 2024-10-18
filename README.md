@@ -11,7 +11,7 @@ This README file outlines the build steps and includes sample code to illustrate
 Before you begin, ensure you have the following installed:
 
 - **Visual Studio 2022** (with C++ development tools)
-- **NASM** (Netwide Assembler)
+- **NASM** (Netwide Assembler) (C:\nasm\nasm)
 - **NMAKE** (comes with Visual Studio)
 
 ## Build Steps
