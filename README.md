@@ -38,12 +38,16 @@ Before you begin, ensure you have the following installed:
 
    - **4.1 Check the MAP File**  
      To confirm that the MSVC compiler is not removing the unused functions from the NASM files, you can analyze the generated `main.map` file. Look for the presence of any unused functions, such as `SampleUnUsedFunctionTwo` or `SampleUnUsedFunctionThree`, in the binary.
+     ![image](https://github.com/user-attachments/assets/d48953c1-a89c-4e6d-98f2-7dd46e0e0041)
+
 
    - **4.2 Use `Dumpbin`**  
      Check the `main.exe` using `Dumpbin`; there will be unused functions present.
      ```bash
      dumpbin Build\main.exe \DISASM
      ```
+     ![image](https://github.com/user-attachments/assets/e305ec1a-2243-4501-ac7b-79746566f999)
+
 
 **Clean Up (Optional)**
 If you want to remove all compiled files and the executable after testing, you can run the clean target:
