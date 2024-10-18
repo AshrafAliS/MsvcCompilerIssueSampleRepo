@@ -1,11 +1,9 @@
 ;------------------------------------------------------------------------------
 ;
-; Copyright (c) 2006, Intel Corporation. All rights reserved.<BR>
-; SPDX-License-Identifier: BSD-2-Clause-Patent
 ;
 ; Module Name:
 ;
-;   WriteDr0.Asm
+;   Sample2.nasm
 ;
 ; Abstract:
 ;
