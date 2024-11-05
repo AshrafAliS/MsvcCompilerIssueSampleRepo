@@ -26,12 +26,14 @@ Before you begin, ensure you have the following installed:
 
 **Create the Build Directory**
   ```bash
-  mkdir Build
+  mkdir Build_Masm
+  mkdir Build_Nasm
   ```
 
 **Run the Build Command**
   ```bash
-  nmake
+  nmake -f MakefileMasm
+  nmake -f MakefileNasm
   ```
 
 **Verify the Issue**
@@ -44,7 +46,7 @@ Before you begin, ensure you have the following installed:
    - **4.2 Use `Dumpbin`**  
      Check the `main.exe` using `Dumpbin`; there will be unused functions present.
      ```bash
-     dumpbin Build\main.exe \DISASM
+     dumpbin Build_Nasm\main.exe \DISASM
      ```
      ![image](https://github.com/user-attachments/assets/e305ec1a-2243-4501-ac7b-79746566f999)
 
