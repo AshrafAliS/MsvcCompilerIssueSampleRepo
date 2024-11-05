@@ -1,0 +1,46 @@
+;------------------------------------------------------------------------------
+;
+; Copyright (c) 2006, Intel Corporation. All rights reserved.
+; SPDX-License-Identifier: BSD-2-Clause-Patent
+;
+; Module Name:
+;
+;   ReadTsc.asm
+;
+; Abstract:
+;
+;   SampleUsedFunctionOne and SampleUnUsedFunctionTwo functions
+;
+; Notes:
+;
+;------------------------------------------------------------------------------
+
+OPTION casemap:none
+
+.CODE               ; Start the code segment
+
+;------------------------------------------------------------------------------
+; UINT64
+; SampleUsedFunctionOne (
+;   VOID
+;   );
+;------------------------------------------------------------------------------
+PUBLIC SampleUsedFunctionOne
+SampleUsedFunctionOne PROC
+    mov  rax, 0dead1234dead1234h  ; Use hexadecimal notation with 'h'
+    ret
+SampleUsedFunctionOne ENDP
+
+;------------------------------------------------------------------------------
+; UINT64
+; SampleUnUsedFunctionTwo (
+;   VOID
+;   );
+;------------------------------------------------------------------------------
+PUBLIC SampleUnUsedFunctionTwo
+SampleUnUsedFunctionTwo PROC
+    mov  rax, 0deadh
+    ret
+SampleUnUsedFunctionTwo ENDP
+
+END
